@@ -160,7 +160,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="127" />
+    <option name="y" value="659" />
     <option name="width" value="2560" />
     <option name="height" value="1303" />
   </component>
@@ -660,7 +661,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1303" extended-state="0" />
+    <frame x="127" y="659" width="2560" height="1303" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
