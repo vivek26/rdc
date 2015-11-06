@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+<div class="page">
+
+
+
+
+  <ul class="simple-list inline-list top-nav">
+    <li>
+      <%= image_tag('icons/facebook55.png',:size=>'16x16',:class=>'social button')%>
+    </li>
+    <li>
+      <%= image_tag('icons/twitter.png',:size=>'16x16',:class=>"social button")%>
+    </li>
+    <li>
+      <a href="#" class="twitter"></a>
+    </li>
+    <li>
+      <a class="button user" href="#">Sign in</a>
+    </li>
+    <li>
+      <a class="button shopping-cart" href="#">Shopping Cart
+      <span class="label">200</span></a>
+    </li>
+
+  </ul>
+
+</div>
+  <div class="logo">
+    <div class="page">
+      <%= image_tag('logo.png',:alt=>'logo',:size=>'200x100')%>
+
+    </div>
+
+  </div>
+
+
+
+  <nav>
+    <div class="page">
+      <ul class="simple-list inline-list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <%= link_to 'Browse Products',products_path,:class=>'drop-down-button'%>
+          <ul class=" simple-list drop-down">
+            <li>
+              <div>
+                <ul>
+                  <li>
+                    <a href="#">Collectibles</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="drop-down-button" href="#">Sell with us</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+</header>
+<div class="page">
+
+ <div class="content">
+   <ul class="simple-list inline-list util-list">
+     <li>
+       <%= link_to 'New Product',new_product_path%>
+     </li>
+     <li>
+       <a href="#">New Category</a>
+     </li>
+     <li>
+       <a href="#">New Shelf</a>
+     </li>
+     <li>
+       <a href="#">New Lot</a>
+     </li>
+     <li>
+       <a href="#">New Auction House</a>
+     </li>
+   </ul>
+   <ul class="breadcrumbs simple-list inline-list">
+     <li>
+       <a href="#">Home</a>
+     </li>
+   </ul>
+   <div class="sidebar">
+     <%= render 'layouts/sidebar'%>
+   </div>
+   <div class="main">
+
+     <%= yield %>
+
+   </div>
+ </div>
+
+
+
+  </div>
+<footer>
+
+</footer>
+</body>
+</html>

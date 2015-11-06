@@ -1,0 +1,269 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+    margin:0;
+    padding:0;
+    font-size:.90em;
+    font-family: 'myriad pro','gill sans',sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: darkgoldenrod;
+}
+footer{
+    height: 400px;
+    background-color: black;
+
+}
+.page{
+    margin:0 auto;
+    width:90%;
+}
+.content{
+   margin:1em;
+    overflow: hidden;
+    height:960px;
+}
+.button{
+    border:thin solid darkgoldenrod;
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+    display: inline-block;
+    color:white;
+    font-size: .90em;
+    padding:.75em;
+    text-decoration: none;
+
+}
+.button:hover{
+    background-color:goldenrod;
+}
+.sidebar{
+ width:25%;
+    float:  left;
+    background-color: #f3f3f3;
+}
+.main{
+ width:73%;
+    float:right;
+}
+.button.shopping-cart{
+    background-image: url('icons/arrow486.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 10px 10px;
+    padding-right: 1.5em;
+    position: relative;
+}
+.simple-list{
+    padding:0;
+    margin:0;
+
+}
+.simple-list li{
+    list-style-type: none;
+}
+.inline-list li{
+    display: inline-block;
+}
+.top-nav{
+    text-align: right;
+    padding:.25em;
+    line-height: 1.5;
+}
+nav{
+    background-color: black;
+    text-align: center;
+    clear: both;
+
+}
+nav a{
+    color:white;
+    display: block;
+    padding:1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .80em;
+    letter-spacing: 1px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+nav li{
+    position: relative;
+}
+nav a:hover{
+    background-color:goldenrod;
+}
+
+.logo{
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+
+}
+
+.shopping-cart .label{
+    background-color: black;
+    margin-left:.25em;
+    padding:.30em .50em;
+    border-radius: 5px;
+    font-size:.75em;
+    position: relative;
+    top:-10px;
+    left:-3px;
+
+}
+.social.button{
+    padding:1;
+    margin-bottom:-1em;
+    background-color: transparent;
+}
+.social.button:hover{
+    background-color: goldenrod;
+}
+.breadcrumbs{
+    background-color:#f3f3f3 ;
+    padding:.50em;
+    margin:.50em 0;
+}
+.breadcrumbs a{
+    text-decoration: none;
+    color: black;
+
+}.breadcrumbs a:after{
+    content:' / '
+ }
+ .breadcrumbs a:last-child::after{
+     content:''
+ }
+ .breadcrumbs a:hover{
+     text-decoration: underline;
+ }
+
+.sidebar li a{
+    display: block;
+    width:90%;
+    float: left;
+    text-decoration: none;
+    color: darkgrey;
+    padding:.75em 0;
+}
+.sidebar li{
+    overflow: hidden;
+    font-size: .90em;
+
+}
+.sidebar li a:hover{
+
+    color: black;
+}
+li img.right-arrow{
+    float:right;
+    margin-top:.30em;
+    padding:.75em 0;
+
+}
+h3{
+    margin-top:2em;
+border-bottom:thin solid lightgray;
+
+
+}
+.search-form{
+    text-align: right;
+}
+.search-form input[type='text'],.search-form input[type='search']{
+    height:34px;
+    width:300px;
+    margin:0;
+    padding:1em;
+}
+.search-form .button{
+    border-radius: 0;
+    margin:0;
+}
+.util-list{
+    text-align: right;
+    font-size: .85em;
+
+}
+.util-list a{
+    color: black;;
+    padding:.25em;
+    text-decoration: none;
+}
+.util-list a::after{
+    content:' | '
+}
+.util-list a::before{
+    content:' | '
+}
+.util-list a:hover{
+    text-decoration: underline;
+}
+.drop-down-button{
+    background-image: url('icons/arrow486%20(3).png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 10px 10px;
+    padding-right: 1.5em;
+    position: relative;
+}
+
+.drop-down{
+    display: none;
+    background-color: goldenrod;
+    width:400px;
+    height:300px;
+    position: absolute;
+    text-align: left;
+    margin:0;
+    padding:0;
+}
+nav li:hover{
+    background-color:goldenrod;
+
+}
+nav li:hover .drop-down{
+    display: block;
+}
+form{
+    width:75%;
+    margin: 0 auto;
+}
+form label{
+    display: inline-block;
+    width:100px;
+}
+form h2{
+    margin-bottom:1em;
+    text-align: center;
+}
+form input[type='text'].large{
+   width:75%;
+    height:25px;
+    margin:.25em;
+    border-radius: 5px;
+    border:thin solid lightgray;
+}
+form input[type='text'].medium {
+    width: 50%;
+}
